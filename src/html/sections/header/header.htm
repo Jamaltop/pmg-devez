@@ -1,81 +1,108 @@
 <header class="header">
-   <div class="header__container">
-      <div class="header__logo">
-         <img src="img/logo.svg" alt="logo">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="img/logo.svg" alt="logo" />
+    </div>
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu-fullscreen" id="menu">
+      <ul class="menu-fullscreen__list">
+        <li><a href="index.html" class="menu-fullscreen__link">Home</a></li>
+        <li><a href="#" class="menu-fullscreen__link">Competition 2025</a></li>
+        <li><a href="#" class="menu-fullscreen__link">About Us</a></li>
+        <li><a href="#" class="menu-fullscreen__link">News & Events</a></li>
+        <li><a href="#" class="menu-fullscreen__link">Resources</a></li>
+        <li><a href="#" class="menu-fullscreen__link">Contact Us</a></li>
+      </ul>
+      <div class="menu-fullscreen__button">
+        <button
+          class="header__button-register"
+          style="
+            color: rgba(255, 255, 255, 1);
+
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 100%;
+            letter-spacing: 0.5px;
+            text-align: left;
+            /* button */
+            width: 204px;
+            height: 56px;
+            /* Автолейаут */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+
+            box-sizing: border-box;
+            border: 2px solid rgba(15, 98, 254, 1);
+            background: rgba(15, 98, 254, 1);
+          "
+        >
+          Register
+        </button>
       </div>
-      <div class="header__menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item">
-                <a href="index.html" class="header__menu-link">
-                    Home
-                </a>
+    </div>
+
+    <div class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="index.html" class="header__menu-link"> Home </a>
+        </li>
+        <li class="header__menu-item header__menu-item--dropdown1">
+          <a href="#" class="header__menu-link">
+            Competition 2025
+            <img class="header__menu-arrow-1" src="img/arrow.svg" alt="arrow" />
+          </a>
+          <ul class="header__menu-dropdown-list1">
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 1 </a>
             </li>
-            <li class="header__menu-item header__menu-item--dropdown1">
-                <a href="#" class="header__menu-link">
-                    Competition 2025
-                    <img class="header__menu-arrow-1" src="img/arrow.svg" alt="arrow">
-                </a>
-                <ul class="header__menu-dropdown-list1">
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 1
-                        </a>
-                    </li>
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 2
-                        </a>
-                    </li>
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 3
-                        </a>
-                    </li>
-                </ul>
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 2 </a>
             </li>
-            <li class="header__menu-item header__menu-item--dropdown2">
-                <a href="#" class="header__menu-link">
-                    About Us
-                    <img class="header__menu-arrow-2" src="img/arrow.svg" alt="arrow">
-                </a>
-                <ul class="header__menu-dropdown-list2">
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 1
-                        </a>
-                    </li>
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 2
-                        </a>
-                    </li>
-                    <li class="header__menu-dropdown-item">
-                        <a href="#" class="header__menu-dropdown-link">
-                            Link 3
-                        </a>
-                    </li>
-                </ul>
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 3 </a>
             </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
-                    News & Events
-                </a>
+          </ul>
+        </li>
+        <li class="header__menu-item header__menu-item--dropdown2">
+          <a href="#" class="header__menu-link">
+            About Us
+            <img class="header__menu-arrow-2" src="img/arrow.svg" alt="arrow" />
+          </a>
+          <ul class="header__menu-dropdown-list2">
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 1 </a>
             </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
-                    Resources
-                </a>
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 2 </a>
             </li>
-            <li class="header__menu-item">
-                <a href="#" class="header__menu-link">
-                    Contact Us
-                </a>
+            <li class="header__menu-dropdown-item">
+              <a href="#" class="header__menu-dropdown-link"> Link 3 </a>
             </li>
-        </ul>
-        <div class="header__button">
-            <button class="header__button-register">Register</button>
-          </div>
+          </ul>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link"> News & Events </a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link"> Resources </a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link"> Contact Us </a>
+        </li>
+      </ul>
+      <div class="header__button">
+        <button class="header__button-register">Register</button>
       </div>
-      
-   </div>
+    </div>
+  </div>
 </header>

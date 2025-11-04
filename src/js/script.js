@@ -30,3 +30,24 @@ window.addEventListener('click', (e) => {
         arrow2.classList.remove('rotate-180');
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+  
+  
+    const toggleMenu = () => {
+      burger.classList.toggle('active');
+      menu.classList.toggle('active');
+      document.body.classList.toggle('lock');
+    };
+  
+    burger.addEventListener('click', toggleMenu);
+  
+   
+    document.querySelectorAll('.menu-fullscreen__link').forEach(link => {
+      link.addEventListener('click', toggleMenu);
+    });
+  });
+  
