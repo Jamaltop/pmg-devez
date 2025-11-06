@@ -955,6 +955,9 @@ input:focus {
   align-items: center;
   gap: 10px;
 }
+.comp-top{
+  margin-bottom: 0 !important;
+}
 
 .club__main-top,
 .club__main-bottom{
@@ -1087,9 +1090,73 @@ input:focus {
 }
 
 @media (max-width: 1260px) {
-  .quick-links {
-    overflow-x: scroll;
+  .comp-midle{
+    gap: 0px !important;
   }
+  .comp-midle-bottom{
+    margin-top: -100px;
+    flex-direction: column;
+    transform: scale(0.7);
+  }
+  .comp-midle-centure{
+    flex-direction: column !important;
+    padding: 30px;
+    gap: 10px;
+    margin-top: -150px;
+    transform: scale(0.45) !important;
+  }
+  .butoni-comp{
+  flex-direction: row !important;
+  }
+  .comp__midle-top_bottom{
+    flex-direction: column !important;
+    transform: scale(0.75);
+  }
+  .comp__midle-top{
+    width: 500px !important;
+    transform: scale(0.7);
+  }
+  .comp-middle-top-top{
+    padding-left: 10px;
+    transform: scale(0.85);
+    gap: 30px !important;
+    .with-border{
+      padding: 0;
+      height: 70px !important;
+      display: flex;
+      align-items: center;
+
+    }
+    .with-border::after{
+      width: 100px;
+    }
+  }
+  .quick-links {
+    
+   transform: translateX(-50px) !important;
+    overflow-x: scroll;
+    transform: scale(0.9) !important;
+
+    h1{
+      font-size: 24px;
+    }
+  }
+.quick-links__links{
+  transform: translateX(-80px) !important;
+  width: 100%;
+}
+.latest__news-title{
+  
+  h1{
+    margin-top: 10px;
+    font-size: 24px !important;
+    width: 300px !important;
+  }
+  
+}
+.box{
+  transform: scale(0.8)
+}
   .header__container {
     display: flex;
     align-items: center;
@@ -1105,6 +1172,49 @@ input:focus {
     display: flex;
     flex-direction: column;
     height: 1280px;
+  }
+  .contact-for-mb{
+    height: 800px ;
+    align-items: center ;
+    
+    
+  }
+  .bolshoy-inpt{
+    width: 400px !important;
+  }
+  .inputi{
+    transform: scale(0.7) !important;
+  }
+  .contact-get{
+    width: 200px !important;
+    font-size: 20px !important;
+    
+  }
+  .feed{
+    padding: 0 !important;
+  }
+  .feeds__cards{
+    margin-bottom: 100px;
+    margin-top: -150px;
+    flex-direction: column !important;
+    transform: scale(0.5) !important;
+  }
+  .feed-has{
+    font-size: 20px !important ;
+    width: 100% !important;
+  }
+  .hh{
+    transform: rotate(90deg) !important;
+  }
+  .contact-mob{
+    flex-direction: column !important;
+    gap: 1px !important;
+  }
+  .res-has{
+    transform: translateX(-20px);
+  }
+  .resources{
+     padding-left: 0px !important;
   }
 
   .quick-links__links{
