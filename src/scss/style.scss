@@ -974,6 +974,7 @@ input:focus {
   position: relative;
   cursor: pointer;
   display: none;
+  
   z-index: 1100;
 }
 .burger span {
@@ -1009,6 +1010,7 @@ input:focus {
 }
 
 .menu-fullscreen {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -1019,9 +1021,9 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(100%);
   visibility: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   z-index: 400;
 }
 
@@ -1048,6 +1050,21 @@ input:focus {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.4s ease;
+}
+.eshe{
+  transition: all .3s ease;
+  animation: Salam 2s ease;
+}
+@keyframes Salam{
+  from{
+    transform: scale(0);
+  
+  }
+  to{
+    transform: scale(1);
+    
+  }
+  
 }
 
 .menu-fullscreen.active .menu-fullscreen__link {
