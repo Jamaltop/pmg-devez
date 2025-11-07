@@ -1086,6 +1086,9 @@ input:focus {
     transform: translateY(0);
   }
 }
+
+
+
 @media(max-width:460px){
   .welcome-to-the{
     .welcome__middle{
@@ -1145,6 +1148,7 @@ input:focus {
     }
   }
   .quick-links {
+    
     transform: translateX(-50px) !important;
     overflow-x: scroll;
     transform: scale(0.9) !important;
@@ -1231,7 +1235,7 @@ input:focus {
   }
 
   .welcome-to-the {
-    margin-top: 200px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     margin-bottom: 250px;
@@ -1246,8 +1250,9 @@ input:focus {
     }
     p{
       font-size: 20px;
-      transform: scale(0.8) !important;
-      text-align: center !important;
+      width: 300px;
+      transform: scale(0.9) translateX(100px) !important;
+      text-align: start !important;
     }
     .welcome__bottom{
       align-items: center;
@@ -1367,28 +1372,32 @@ input:focus {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header-buttom{
-    padding: 20px;
+    padding: 15px;
 
     .header-buttom__button-1,
     .header-buttom__button-2{
-      width: 178px !important;
-      font-size: 16px !important;
+      width: 140px !important;
+      font-size: 12px !important;
+    }
+
+    .header-buttom__button-2{
+      font-size: 12px !important;
     }
     .header-buttom__description{
-      width: 362px !important;
+      width: 290px !important;
     
     }
 
     .header-buttom__container{
       height: 200px;
-      gap: 120px !important;
+      gap: 170px !important;
       margin-bottom: 100px !important;
     }
 
     .header-buttom__title{
-      font-size: 38px !important;
+      font-size: 28px !important;
     }
 
     .header-buttom{
@@ -1409,5 +1418,26 @@ input:focus {
     display: flex !important;
     flex-direction: column !important;
     gap: 20px !important;
+  }
+
+  .sponsors__title{
+    font-size: 30px !important;
+    width: 400px !important;
+  }
+
+
+  .latest__news-boxes{
+
+    .box__img img{
+      width: 300px !important;
+    }
+
+    .box{
+      width: 300px !important;
+
+      p{
+        width: 300px !important;
+      }
+    }
   }
 }
