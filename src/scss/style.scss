@@ -1086,7 +1086,23 @@ input:focus {
     transform: translateY(0);
   }
 }
-
+@media(max-width:460px){
+  .welcome-to-the{
+    .welcome__middle{
+      display: flex !important;
+      width: 500px !important; 
+      transform: translateX(50px);
+    }
+    p{
+      
+      transform: scale(0.7) !important;
+     
+    }
+    img{
+      width: 350px;
+    }
+  }
+}
 @media (max-width: 1260px) {
   .comp-midle{
     gap: 0px !important;
@@ -1222,8 +1238,31 @@ input:focus {
   }
 
   .welcome-to-the {
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 250px;
+    .welcome__top-title{
+     display: flex; 
+     flex-direction: column;
+     align-items: center;
+     h1{
+      font-size: 14px !important;
+      transform: translateX(145px);
+     }
+    }
+    p{
+      font-size: 20px;
+      transform: scale(0.8) !important;
+      text-align: center !important;
+    }
+    .welcome__bottom{
+      align-items: center;
+      width: 100%;  
+      flex-direction: column !important;
+    }
+    
+     
   }
 
 
