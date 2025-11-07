@@ -994,7 +994,6 @@ input:focus {
   top: 16px;
 }
 
-
 .burger.active span:nth-child(1) {
   transform: rotate(45deg);
   z-index: 1000;
@@ -1089,21 +1088,17 @@ input:focus {
   }
 }
 
-
-
-@media(max-width:460px){
-  .welcome-to-the{
-    .welcome__middle{
+@media (max-width: 460px) {
+  .welcome-to-the {
+    .welcome__middle {
       display: flex !important;
-      width: 500px !important; 
+      width: 500px !important;
       transform: translateX(50px);
     }
-    p{
-      
+    p {
       transform: scale(0.7) !important;
-     
     }
-    img{
+    img {
       width: 350px;
     }
   }
@@ -1150,7 +1145,6 @@ input:focus {
     }
   }
   .quick-links {
-    
     transform: translateX(-50px) !important;
     overflow-x: scroll;
     transform: scale(0.9) !important;
@@ -1241,28 +1235,26 @@ input:focus {
     display: flex;
     flex-direction: column;
     margin-bottom: 250px;
-    .welcome__top-title{
-     display: flex; 
-     flex-direction: column;
-     align-items: center;
-     h1{
-      font-size: 14px !important;
-      transform: translateX(145px);
-     }
+    .welcome__top-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 14px !important;
+        transform: translateX(145px);
+      }
     }
-    p{
+    p {
       font-size: 20px;
       width: 300px;
       transform: scale(0.9) translateX(100px) !important;
       text-align: start !important;
     }
-    .welcome__bottom{
+    .welcome__bottom {
       align-items: center;
-      width: 100%;  
+      width: 100%;
       flex-direction: column !important;
     }
-    
-     
   }
 
   .club-stand,
@@ -1375,71 +1367,241 @@ input:focus {
 }
 
 @media (max-width: 500px) {
-  .header-buttom{
+  .header-buttom {
     padding: 15px;
 
     .header-buttom__button-1,
-    .header-buttom__button-2{
+    .header-buttom__button-2 {
       width: 140px !important;
       font-size: 12px !important;
     }
 
-    .header-buttom__button-2{
+    .header-buttom__button-2 {
       font-size: 12px !important;
     }
-    .header-buttom__description{
+    .header-buttom__description {
       width: 290px !important;
-    
     }
 
-    .header-buttom__container{
+    .header-buttom__container {
       height: 200px;
       gap: 170px !important;
       margin-bottom: 100px !important;
     }
 
-    .header-buttom__title{
+    .header-buttom__title {
       font-size: 28px !important;
     }
 
-    .header-buttom{
+    .header-buttom {
       height: 10px !important;
     }
-    .header-buttom__image{
+    .header-buttom__image {
       height: 400px !important;
     }
   }
 
-
-  .latest__news-boxes{
+  .latest__news-boxes {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  .sponsors__container{
+  .sponsors__container {
     display: flex !important;
     flex-direction: column !important;
     gap: 20px !important;
   }
 
-  .sponsors__title{
+  .sponsors__title {
     font-size: 30px !important;
     width: 400px !important;
   }
 
-
-  .latest__news-boxes{
-
-    .box__img img{
+  .latest__news-boxes {
+    .box__img img {
       width: 300px !important;
     }
 
-    .box{
+    .box {
       width: 300px !important;
 
-      p{
+      p {
         width: 300px !important;
       }
     }
   }
+}
+
+.club-stand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 80px;
+}
+
+.club-stand-h1-box {
+  width: 600px;
+  height: 169px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.about__circles {
+  width: 262.5px;
+  height: 16px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.about__main-box-top-div {
+  /* Arrows */
+  width: 262.5px;
+  height: 24px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.about__main-box-top-div-img {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__button-register {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  /* button */
+  width: 204px;
+  height: 56px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  box-sizing: border-box;
+  border: 2px solid rgba(15, 98, 254, 1);
+  background: rgba(15, 98, 254, 1);
+}
+
+.history-club-h1-box {
+  /* Section Text */
+  width: 600px;
+  height: 169px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.history-club {
+  /* Автолейаут */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 80px;
+}
+
+.contact__con {
+  padding-left: 163px;
+  padding-right: 163px;
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 362px;
+
+  gap: 52px;
+}
+
+.inputi {
+  min-height: 134px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contact__inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.contact__inputs-input {
+  max-width: 1120px;
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact__inputs-btn {
+  max-width: 1114px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.contact__inputs-button {
+  padding: 16px 28px 16px 28px;
+  color: rgba(255, 255, 255, 1);
+
+  box-sizing: border-box;
+  border: 2px solid rgba(15, 98, 254, 1);
+  background: rgba(15, 98, 254, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.contact-get {
+  color: rgba(34, 34, 32, 1);
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: center;
 }
