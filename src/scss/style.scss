@@ -332,7 +332,7 @@ body {
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 24px;
-  // Use auto height to avoid oversized footer on small screens
+ 
   height: auto;
   .footer__bottom-right {
     width: 332px;
@@ -346,8 +346,7 @@ body {
     gap: 16px;
   }
 
-  .footer__container {
-  }
+ 
   .footer__bottom {
     margin-top: 48px;
     width: 100%;
@@ -385,7 +384,7 @@ body {
 
     display: flex;
 
-    @include adaptiveValue("gap", 120, 60, 1920, 1024);
+    @include adaptiveValue("gap", 120, 10, 1920, 1024);
   }
   .footer__top-content-block-title {
     display: flex;
@@ -592,8 +591,9 @@ body {
   border-radius: 3px;
 }
 
-@media (max-width: $tablet) {
+@media (max-width: 67em) {
   .footer {
+    
     padding-left: 32px;
     padding-right: 32px;
     height: auto;
@@ -604,8 +604,10 @@ body {
     }
 
     .footer__top--content {
-      gap: 32px;
-      display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     display: flex;
+     gap: 10px;
     }
 
     .footer__bottom {
@@ -614,7 +616,7 @@ body {
   }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: 62em) {
   .footer {
     padding: 32px 16px 16px 16px;
     height: auto;
@@ -625,27 +627,23 @@ body {
 
     .footer__top {
       flex-direction: column;
-      align-items: center;
+      align-items: start;
       gap: 24px;
       padding-bottom: 20px;
     }
 
     .footer__top--content {
       width: 100%;
-      max-width: none;
-      height: auto;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      max-width: 600px !important;
+      height: auto !important;
+      flex-wrap: wrap !important;
+    display: flex !important;
+    justify-content: start !important;
+    align-items: flex-start !important;
+      gap: 16px !important;
     }
 
-    .footer__top-content-block,
-    .footer__top-content-block-title {
-      width: 100% !important;
-      max-width: none;
-      flex-wrap: wrap;
-      height: auto;
-    }
+    
 
     .footer__top-content-block-title {
       gap: 12px;
@@ -685,6 +683,11 @@ body {
         height: 18px;
       }
     }
+  }
+}
+@media(max-width:462px){
+  .footer__top--content{
+    width: 200px !important;
   }
 }
 
@@ -1600,7 +1603,7 @@ input:focus {
   }
 }
 
-@media (max-width: $mobile) {
+@media (max-width: 679px) {
   .club__main {
     div {
       margin: 0 auto;
@@ -1624,7 +1627,12 @@ input:focus {
   }
 
   .contact-for-mb {
+    min-height: 650px !important;
+    align-items: center !important;
+    justify-content: center !important;
     .contact-mob {
+      gap: 10px !important;
+      flex-direction: column !important;
       gap: 20px !important;
       div {
         width: 200px;
@@ -1635,6 +1643,9 @@ input:focus {
 
       p {
         font-size: 16px !important;
+      }
+      .hh{
+        transform: rotate(90deg);
       }
     }
   }
