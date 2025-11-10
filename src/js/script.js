@@ -36,20 +36,76 @@ window.addEventListener('click', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.getElementById('burger');
     const menu = document.getElementById('menu');
+    let isMenuOpen = false;
   
-  
+    const openMenu = () => {
+      if (isMenuOpen) return;
+      isMenuOpen = true;
+      burger.classList.add('active');
+      menu.classList.add('active');
+      document.body.classList.add('lock');
+      // Добавляем класс для анимации после небольшой задержки
+      setTimeout(() => {
+        menu.classList.add('menu-animating');
+      }, 10);
+    };
+
+    const closeMenu = () => {
+      if (!isMenuOpen) return;
+      isMenuOpen = false;
+      menu.classList.remove('menu-animating');
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+      document.body.classList.remove('lock');
+    };
+
     const toggleMenu = () => {
-      burger.classList.toggle('active');
-      menu.classList.toggle('eshe')
-      menu.classList.toggle('active');
-      document.body.classList.toggle('lock');
+      if (isMenuOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     };
   
-    burger.addEventListener('click', toggleMenu);
-  
-   
-    document.querySelectorAll('.menu-fullscreen__link').forEach(link => {
-      link.addEventListener('click', toggleMenu);
+    // Открытие/закрытие по клику на бургер
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMenu();
     });
-  });
   
+    // Закрытие по клику на ссылки
+    document.querySelectorAll('.menu-fullscreen__link').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Закрытие по ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        closeMenu();
+      }
+    });
+
+    // Закрытие по клику вне меню
+    menu.addEventListener('click', (e) => {
+      if (e.target === menu) {
+        closeMenu();
+      }
+    });
+
+    // Предотвращаем закрытие при клике на содержимое меню
+    const menuContent = menu.querySelector('.menu-fullscreen__list');
+    if (menuContent) {
+      menuContent.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+
+    const menuButton = menu.querySelector('.menu-fullscreen__button');
+    if (menuButton) {
+      menuButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+    }
+  });
